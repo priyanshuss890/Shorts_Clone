@@ -1,0 +1,55 @@
+/* Video.css */
+.video {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: calc(100vh - 40px); /* Adjust the margin as per your requirement */
+  margin: 20px auto; /* Adjust the margin as per your requirement */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px; /* Add rounded corners */
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+.video__playButton {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* padding: 10px 15px; */
+  
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 60px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.video__player {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.video__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.video__footer {
+  position: relative;
+}
+
+.video__sidebar {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  color: white;
+  transform: translateY(-50%);
+}
